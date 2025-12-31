@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import parseFile from './src/parse.js';
+import { parseFile } from './src/parse.js';
+import compareFiles from './src/compare.js';
 
 program
   .name('gendiff')
@@ -15,9 +16,8 @@ program
       const data1 = parseFile(filepath1);
       const data2 = parseFile(filepath2);
       
-      console.log('File 1 data:', data1);
-      console.log('File 2 data:', data2);
-      console.log('Format:', options.format);
+      const diff = compareFiles(data1, data2);
+      console.log(diff);
     } catch (error) {
       console.error('Error:', error.message);
       process.exit(1);

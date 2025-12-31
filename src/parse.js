@@ -25,4 +25,5 @@ const parseFile = (filepath) => {
   return parser(content);
 };
 
+export { parseFile };
 export default parseFile;
