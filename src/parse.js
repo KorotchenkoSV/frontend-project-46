@@ -2,8 +2,12 @@ import fs from 'fs';
 import path from 'path';
 
 const readFile = (filepath) => {
-  const absolutePath = path.resolve(process.cwd(), filepath);
-  return fs.readFileSync(absolutePath, 'utf-8');
+  try {
+    const absolutePath = path.resolve(process.cwd(), filepath);
+    return fs.readFileSync(absolutePath, 'utf-8');
+  } catch (err) {
+    throw new Error(`Cannot read file: ${filepath}`);
+  }
 };
 
 const parseJson = (content) => JSON.parse(content);
@@ -25,5 +29,4 @@ const parseFile = (filepath) => {
   return parser(content);
 };
 
-export { parseFile };
 export default parseFile;

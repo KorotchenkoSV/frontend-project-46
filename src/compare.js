@@ -1,35 +1,25 @@
 import _ from 'lodash';
 
 const compareFiles = (data1, data2) => {
-  // Получаем все уникальные ключи из обоих объектов
-  const allKeys = _.union(Object.keys(data1), Object.keys(data2));
-  
-  // Сортируем ключи в алфавитном порядке
+  const allKeys = [...new Set([...Object.keys(data1), ...Object.keys(data2)])];
   const sortedKeys = _.sortBy(allKeys);
-  
-  // Формируем строки дифа
+
+
   const diffLines = sortedKeys.map((key) => {
     if (!(key in data1)) {
-      // Ключ есть только во втором файле
-      return `+ ${key}: ${data2[key]}`;
+      return `  + ${key}: ${data2[key]}`; // Убрали \n
     }
-    
     if (!(key in data2)) {
-      // Ключ есть только в первом файле
-      return `- ${key}: ${data1[key]}`;
+      return `  - ${key}: ${data1[key]}`; // Убрали \n
     }
-    
     if (data1[key] !== data2[key]) {
-      // Ключ есть в обоих, но значения различаются
-      return `- ${key}: ${data1[key]}\n+ ${key}: ${data2[key]}`;
+      return `  - ${key}: ${data1[key]}\n  + ${key}: ${data2[key]}`; // \n только между строками
     }
-    
-    // Ключ и значение совпадают в обоих файлах
-    return `  ${key}: ${data1[key]}`;
+    return `  ${key}: ${data1[key]}`; // Убрали \n
   });
-  
-  // Собираем итоговую строку с переносами и обрамляем фигурными скобками
-  return `{\n${diffLines.join('\n')}\n}`;
+
+  // Собираем все строки и оборачиваем в фигурные скобки
+  return `{\n${diffLines.join('\n')}\n}`; // \n между строками, но не в конце
 };
 
 export default compareFiles;
