@@ -15,7 +15,7 @@ const compareFiles = (data1, data2) => {
     if (data1[key] !== data2[key]) {
       return `  - ${key}: ${data1[key]}\n  + ${key}: ${data2[key]}`; // \n только между строками
     }
-    return `  ${key}: ${data1[key]}`; // Убрали \n
+    return `    ${key}: ${data1[key]}`; // Убрали \n
   });
 
   // Собираем все строки и оборачиваем в фигурные скобки
