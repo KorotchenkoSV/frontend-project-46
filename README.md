@@ -9,6 +9,10 @@
 
 ## Пример работы
 
+**Сравнение JSON-файлов:**
 ```bash
 gendiff file1.json file2.json
-gendiff -f plain file1.yaml file2.yaml  # если добавите другие форматы
+
+**Сравнение YAML-файлов:**
+gendiff file1.yaml file2.yaml
+
