@@ -20,6 +20,6 @@ npm run gendiff [options] <filepath1> <filepath2>
 
 ###Демонстрация интерфейса
 
-![Сравнение JSON-файлов](frontend-project-46 test json.png)
-![Сравнение YAML-файлов](frontend-project-46 test yaml.png)    
-![Простой формат](Простой формат.png) 
+![Сравнение JSON-файлов](test-json.png)
+![Сравнение YAML-файлов](test-yaml.png)
+![Простой формат](simple-format.png)
