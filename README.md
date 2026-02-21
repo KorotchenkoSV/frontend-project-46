@@ -9,10 +9,17 @@
 
 ## Пример работы
 
-**Сравнение JSON-файлов:**
+**Сравнение JSON-файлов/YAML-файлов:**
 ```bash
-gendiff file1.json file2.json
 
-**Сравнение YAML-файлов:**
-gendiff file1.yaml file2.yaml
+npm run gendiff [options] <filepath1> <filepath2>
 
+Доступные варианты:
+-f, --format [type] - укажите формат вывода (по умолчанию stylish)
+-h, --help - отображение справочной информации
+
+###Демонстрация интерфейса
+
+![Сравнение JSON-файлов](frontend-project-46 test json.png)
+![Сравнение YAML-файлов](frontend-project-46 test yaml.png)    
+![Простой формат](Простой формат.png) 

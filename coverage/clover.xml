@@ -1,56 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1767602453428" clover="3.2.0">
-  <project timestamp="1767602453428" name="All files">
-    <metrics statements="36" coveredstatements="33" conditionals="10" coveredconditionals="8" methods="8" coveredmethods="8" elements="54" coveredelements="49" complexity="0" loc="36" ncloc="36" packages="2" files="3" classes="3"/>
+<coverage generated="1771646942369" clover="3.2.0">
+  <project timestamp="1771646942369" name="All files">
+    <metrics statements="131" coveredstatements="120" conditionals="93" coveredconditionals="77" methods="25" coveredmethods="24" elements="249" coveredelements="221" complexity="0" loc="131" ncloc="131" packages="3" files="8" classes="8"/>
     <package name="frontend-project-46">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="/home/korotchenkosv/frontend-project-46/index.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="frontend-project-46.src">
-      <metrics statements="32" coveredstatements="29" conditionals="10" coveredconditionals="8" methods="7" coveredmethods="7"/>
-      <file name="compare.js" path="/home/korotchenkosv/frontend-project-46/src/compare.js">
-        <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <metrics statements="38" coveredstatements="35" conditionals="19" coveredconditionals="14" methods="7" coveredmethods="7"/>
+      <file name="compareData.js" path="/home/korotchenkosv/frontend-project-46/src/compareData.js">
+        <metrics statements="18" coveredstatements="17" conditionals="12" coveredconditionals="11" methods="2" coveredmethods="2"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="12" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="4" type="stmt"/>
-        <line num="15" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
+        <line num="4" count="30" type="stmt"/>
+        <line num="5" count="30" type="stmt"/>
+        <line num="6" count="30" type="stmt"/>
+        <line num="8" count="30" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="30" type="stmt"/>
+        <line num="13" count="108" type="stmt"/>
+        <line num="14" count="108" type="stmt"/>
+        <line num="16" count="108" type="cond" truecount="4" falsecount="0"/>
+        <line num="17" count="24" type="stmt"/>
+        <line num="24" count="84" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="30" type="stmt"/>
+        <line num="32" count="54" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="40" count="42" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="24" type="stmt"/>
+        <line num="49" count="18" type="stmt"/>
       </file>
-      <file name="parse.js" path="/home/korotchenkosv/frontend-project-46/src/parse.js">
-        <metrics statements="20" coveredstatements="17" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="4" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
+      <file name="index.js" path="/home/korotchenkosv/frontend-project-46/src/index.js">
+        <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+      </file>
+      <file name="parsers.js" path="/home/korotchenkosv/frontend-project-46/src/parsers.js">
+        <metrics statements="11" coveredstatements="9" conditionals="6" coveredconditionals="3" methods="4" coveredmethods="4"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <line num="17" count="12" type="cond" truecount="2" falsecount="2"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="frontend-project-46.src.formatters">
+      <metrics statements="93" coveredstatements="85" conditionals="74" coveredconditionals="63" methods="18" coveredmethods="17"/>
+      <file name="index.js" path="/home/korotchenkosv/frontend-project-46/src/formatters/index.js">
+        <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="json.js" path="/home/korotchenkosv/frontend-project-46/src/formatters/json.js">
+        <metrics statements="35" coveredstatements="33" conditionals="27" coveredconditionals="25" methods="6" coveredmethods="6"/>
+        <line num="1" count="64" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="52" type="stmt"/>
+        <line num="6" count="52" type="cond" truecount="5" falsecount="0"/>
+        <line num="7" count="14" type="stmt"/>
+        <line num="8" count="14" type="stmt"/>
+        <line num="10" count="14" type="stmt"/>
+        <line num="12" count="18" type="stmt"/>
+        <line num="14" count="14" type="stmt"/>
+        <line num="17" count="38" type="cond" truecount="5" falsecount="0"/>
+        <line num="18" count="16" type="stmt"/>
+        <line num="21" count="22" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
-        <line num="25" count="4" type="stmt"/>
-        <line num="27" count="4" type="cond" truecount="2" falsecount="2"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="28" count="8" type="cond" truecount="2" falsecount="0"/>
         <line num="29" count="2" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="39" count="4" type="stmt"/>
-        <line num="40" count="4" type="stmt"/>
-        <line num="41" count="4" type="stmt"/>
+        <line num="32" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="39" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="10" type="stmt"/>
+        <line num="45" count="10" type="stmt"/>
+        <line num="47" count="10" type="stmt"/>
+        <line num="50" count="36" type="stmt"/>
+        <line num="52" count="36" type="cond" truecount="5" falsecount="1"/>
+        <line num="54" count="8" type="stmt"/>
+        <line num="56" count="10" type="stmt"/>
+        <line num="58" count="6" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="62" count="8" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="68" count="10" type="stmt"/>
+      </file>
+      <file name="plain.js" path="/home/korotchenkosv/frontend-project-46/src/formatters/plain.js">
+        <metrics statements="26" coveredstatements="23" conditionals="25" coveredconditionals="20" methods="5" coveredmethods="4"/>
+        <line num="1" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="22" type="stmt"/>
+        <line num="3" count="22" type="cond" truecount="3" falsecount="1"/>
+        <line num="5" count="22" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="22" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="26" type="cond" truecount="5" falsecount="0"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="16" count="20" type="cond" truecount="4" falsecount="0"/>
+        <line num="17" count="14" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="10" type="stmt"/>
+        <line num="30" count="36" type="stmt"/>
+        <line num="32" count="36" type="cond" truecount="5" falsecount="1"/>
+        <line num="34" count="8" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="40" count="8" type="stmt"/>
+        <line num="42" count="6" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="48" count="10" type="stmt"/>
+        <line num="50" count="10" type="stmt"/>
+      </file>
+      <file name="stylish.js" path="/home/korotchenkosv/frontend-project-46/src/formatters/stylish.js">
+        <metrics statements="26" coveredstatements="24" conditionals="18" coveredconditionals="15" methods="6" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="64" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="64" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="14" count="54" type="stmt"/>
+        <line num="15" count="54" type="stmt"/>
+        <line num="17" count="54" type="cond" truecount="5" falsecount="0"/>
+        <line num="18" count="14" type="stmt"/>
+        <line num="20" count="18" type="stmt"/>
+        <line num="21" count="14" type="stmt"/>
+        <line num="27" count="40" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="10" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="35" count="10" type="stmt"/>
+        <line num="36" count="10" type="stmt"/>
+        <line num="38" count="10" type="stmt"/>
+        <line num="41" count="36" type="stmt"/>
+        <line num="43" count="36" type="cond" truecount="5" falsecount="1"/>
+        <line num="45" count="8" type="stmt"/>
+        <line num="47" count="10" type="stmt"/>
+        <line num="49" count="6" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="53" count="8" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="62" count="10" type="stmt"/>
       </file>
     </package>
   </project>

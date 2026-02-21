@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>0/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>0/12</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -90,51 +90,51 @@
 <a name='L25'></a><a href='#L25'>25</a>
 <a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _ from 'lodash';
 &nbsp;
-const compareFiles = (data1, data2) =&gt; {
-  const allKeys = [...new Set([...Object.keys(data1), ...Object.keys(data2)])];
-  const sortedKeys = _.sortBy(allKeys);
+const compareFiles = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(d</span>ata1, data2) =&gt; {</span>
+  const allKeys = <span class="cstat-no" title="statement not covered" >[...new Set([...Object.keys(data1), ...Object.keys(data2)])];</span>
+  const sortedKeys = <span class="cstat-no" title="statement not covered" >_.sortBy(allKeys);</span>
 &nbsp;
 &nbsp;
-  const diffLines = sortedKeys.map((key) =&gt; {
-    if (!(key in data1)) {
-      return `  + ${key}: ${data2[key]}`; // Убрали \n
+  const diffLines = <span class="cstat-no" title="statement not covered" >sortedKeys.map(<span class="fstat-no" title="function not covered" >(k</span>ey) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (!(key in data1)) {</span>
+<span class="cstat-no" title="statement not covered" >      return `  + ${key}: ${data2[key]}`; </span>// Убрали \n
     }
-    if (!(key in data2)) {
-      return `  - ${key}: ${data1[key]}`; // Убрали \n
+<span class="cstat-no" title="statement not covered" >    if (!(key in data2)) {</span>
+<span class="cstat-no" title="statement not covered" >      return `  - ${key}: ${data1[key]}`; </span>// Убрали \n
     }
-    if (data1[key] !== data2[key]) {
-      return `  - ${key}: ${data1[key]}\n  + ${key}: ${data2[key]}`; // \n только между строками
+<span class="cstat-no" title="statement not covered" >    if (data1[key] !== data2[key]) {</span>
+<span class="cstat-no" title="statement not covered" >      return `  - ${key}: ${data1[key]}\n  + ${key}: ${data2[key]}`; </span>// \n только между строками
     }
-    return `    ${key}: ${data1[key]}`; // Убрали \n
+<span class="cstat-no" title="statement not covered" >    return `    ${key}: ${data1[key]}`; </span>// Убрали \n
   });
 &nbsp;
   // Собираем все строки и оборачиваем в фигурные скобки
-  return `{\n${diffLines.join('\n')}\n}`; // \n между строками, но не в конце
+<span class="cstat-no" title="statement not covered" >  return `{\n${diffLines.join('\n')}\n}`; </span>// \n между строками, но не в конце
 };
 &nbsp;
 export default compareFiles;
@@ -145,7 +145,7 @@ export default compareFiles;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2026-01-05T08:40:53.409Z
+                at 2026-01-06T09:23:37.879Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
