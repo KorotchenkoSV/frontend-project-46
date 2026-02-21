@@ -17,7 +17,7 @@ npm run gendiff [options] <filepath1> <filepath2>
 Доступные варианты:
 -f, --format [type] - укажите формат вывода (по умолчанию stylish)
 -h, --help - отображение справочной информации
-
+```
 ###Демонстрация интерфейса
 
 ![Сравнение JSON-файлов](test-json.png)
