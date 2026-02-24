@@ -7,14 +7,14 @@ export default {
   coverageReporters: ['json', 'lcov', 'text', 'clover'],
   collectCoverageFrom: [
     'src/**/*.js',
-    'index.js'
+    'index.js',
   ],
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
   },
   transform: {},
   transformIgnorePatterns: [
-    '/node_modules/(?!@jest/globals)'
+    '/node_modules/(?!@jest/globals)',
   ],
   moduleFileExtensions: ['js', 'json', 'node'],
-};
+}

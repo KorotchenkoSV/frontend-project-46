@@ -1,53 +1,53 @@
 const makePath = (node, prefix = '') => {
-  const { type, key, children } = node;
-  const path = prefix && !prefix.endsWith('.') ? `${prefix}.${key}` : `${prefix}${key}`;
+  const { type, key, children } = node
+  const path = prefix && !prefix.endsWith('.') ? `${prefix}.${key}` : `${prefix}${key}`
 
   if (type === 'nested') {
-    return children.map((child) => makePath(child, path));
+    return children.map(child => makePath(child, path))
   }
 
-  return `${path}`;
-};
+  return `${path}`
+}
 
 const getValue = (value) => {
   if (value == null || typeof value === 'boolean' || typeof value === 'number') {
-    return value;
+    return value
   }
   if (typeof value !== 'object' || value === null) {
-    return `'${value}'`;
+    return `'${value}'`
   }
-  return '[complex value]';
-};
+  return '[complex value]'
+}
 
 const makePlain = (diffTree, prefix = '') => {
   if (diffTree.length === 0) {
-    return 'Empty files!';
+    return 'Empty files!'
   }
 
   const cb = (lines, node) => {
     const {
       type, value, oldValue, newValue, children,
-    } = node;
+    } = node
 
     switch (type) {
       case 'nested':
-        return lines.concat(makePlain(children, `${prefix}${node.key}.`));
+        return lines.concat(makePlain(children, `${prefix}${node.key}.`))
       case 'added':
-        return lines.concat(`Property '${makePath(node, prefix)}' was added with value: ${getValue(value)}`);
+        return lines.concat(`Property '${makePath(node, prefix)}' was added with value: ${getValue(value)}`)
       case 'deleted':
-        return lines.concat(`Property '${makePath(node, prefix)}' was removed`);
+        return lines.concat(`Property '${makePath(node, prefix)}' was removed`)
       case 'changed':
-        return lines.concat(`Property '${makePath(node, prefix)}' was updated. From ${getValue(oldValue)} to ${getValue(newValue)}`);
+        return lines.concat(`Property '${makePath(node, prefix)}' was updated. From ${getValue(oldValue)} to ${getValue(newValue)}`)
       case 'unchanged':
-        return lines;
+        return lines
       default:
-        throw new Error(`Unsupported type: ${type}`);
+        throw new Error(`Unsupported type: ${type}`)
     }
-  };
+  }
 
-  const result = diffTree.reduce(cb, []).join('\n');
+  const result = diffTree.reduce(cb, []).join('\n')
 
-  return result;
-};
+  return result
+}
 
-export default makePlain;
+export default makePlain
